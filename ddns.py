@@ -1,3 +1,4 @@
+#!/home/smig/DevOps/cloudflare_ddns/venv/bin python
 # Cloudflare dynamic dns update script 8.27.2022 by Mike Smith
 from dotenv import load_dotenv
 import json
@@ -52,6 +53,7 @@ def get_cf_data():
         with open('ddns_error.log', 'a') as f:
             f.write(f"ERROR: {e}")
             a_record_ip == None
+    
 
     return a_record_ip
 
